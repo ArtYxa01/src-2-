@@ -14,7 +14,7 @@ function handleGalleryMarkup (items) {
       />
     </a>
   </div>)`).join("")
-}
+};
 console.log(galleryMarkup)
 galleryList.insertAdjacentElement('beforeend', galleryMarkup)
 galleryList.addEventListener('click', handleGalleryClick)

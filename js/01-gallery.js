@@ -13,16 +13,16 @@ function handleGalleryMarkup (items) {
         alt="${item.description}"
       />
     </a>
-  </div>)`).join("")
+  </div>`).join("")
 };
 console.log(galleryMarkup)
-galleryList.insertAdjacentElement('beforeend', galleryMarkup)
+galleryList.insertAdjacentHLML('beforeend', galleryMarkup)
 galleryList.addEventListener('click', handleGalleryClick)
 function handleGalleryClick(event){
     event.preventDefault()
-    if(event.target.nodeName !== 'IMG' {
+    if(event.target.nodeName !== 'IMG') {
         return
-    })
+    }
     const modalImg = event.target.dataset.source
     console.log(modalImg)
     const instance = basicLightbox.create(`<img src="${modalImg}" width="800" height="600">`)

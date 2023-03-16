@@ -16,7 +16,7 @@ function handleGalleryMarkup (items) {
   </div>`).join("")
 };
 console.log(galleryMarkup)
-galleryList.insertAdjacentHLML('beforeend', galleryMarkup)
+galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 galleryList.addEventListener('click', handleGalleryClick)
 function handleGalleryClick(event){
     event.preventDefault()
